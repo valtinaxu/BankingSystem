@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<ScrollPane prefHeight="600.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="createaccount.CreateAccountController">
+   <content>
+      <AnchorPane prefHeight="600.0" prefWidth="450.0" styleClass="login-main" stylesheets="@../../java/design/designsheet.css">
+         <children>
+            <Button layoutX="374.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#closeApp" styleClass="login-button" text="CLOSE" textFill="#868686">
+               <font>
+                  <Font size="10.0" />
+               </font></Button>
+            <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#backToLogIn" styleClass="login-button" text="BACK" textFill="#868686">
+               <font>
+                  <Font size="10.0" />
+               </font></Button>
+            <Label layoutX="67.0" layoutY="53.0" text="Account Registration">
+               <font>
+                  <Font name="Impact" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="80.0" layoutY="98.0" text="Please fill the below form to create an account">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="118.0" layoutY="157.0" text="Personal Information" textFill="#7c7c7c">
+               <font>
+                  <Font name="Impact" size="24.0" />
+               </font>
+            </Label>
+            <TextField layoutX="55.0" layoutY="200.0" prefHeight="38.0" prefWidth="340.0" promptText="Full Name" styleClass="field-decoration" stylesheets="@../../java/design/designsheet.css" />
+            <TextField layoutX="55.0" layoutY="250.0" prefHeight="38.0" prefWidth="340.0" promptText="Card No." styleClass="field-decoration" stylesheets="@../../java/design/designsheet.css" />
+            <TextField layoutX="55.0" layoutY="300.0" prefHeight="38.0" prefWidth="340.0" promptText="Phone Number" styleClass="field-decoration" stylesheets="@../../java/design/designsheet.css" />
+            <ComboBox layoutX="55.0" layoutY="350.0" prefHeight="38.0" prefWidth="340.0" promptText="Gender" styleClass="field-decoration" stylesheets="@../../java/design/designsheet.css" />
+            <ComboBox layoutX="55.0" layoutY="400.0" prefHeight="38.0" prefWidth="340.0" promptText="Martial Status" styleClass="field-decoration" stylesheets="@../../java/design/designsheet.css" />
+            <ComboBox layoutX="55.0" layoutY="450.0" prefHeight="38.0" prefWidth="340.0" promptText="Race/Ethnicity" styleClass="field-decoration" stylesheets="@../../java/design/designsheet.css" />
+            <DatePicker layoutX="55.0" layoutY="500.0" prefHeight="38.0" prefWidth="340.0" promptText="Date of Birth" />
+            <TextField layoutX="55.0" layoutY="550.0" prefHeight="38.0" prefWidth="340.0" promptText="Address" styleClass="field-decoration" />
+            <TextField layoutX="55.0" layoutY="600.0" prefHeight="38.0" prefWidth="340.0" promptText="Zip Code" styleClass="field-decoration" />
+            <Label layoutX="122.0" layoutY="677.0" text="Account Information" textFill="#7c7c7c">
+               <font>
+                  <Font name="Impact" size="24.0" />
+               </font>
+            </Label>
+            <TextField layoutX="55.0" layoutY="720.0" prefHeight="38.0" prefWidth="340.0" promptText="Account No." styleClass="field-decoration" />
+            <TextField layoutX="55.0" layoutY="770.0" prefHeight="38.0" prefWidth="340.0" promptText="Est. Yearly Income" styleClass="field-decoration" />
+            <ComboBox layoutX="55.0" layoutY="820" prefHeight="38.0" prefWidth="340.0" promptText="Account Type" styleClass="field-decoration" />
+            <PasswordField layoutX="55.0" layoutY="870.0" prefHeight="38.0" prefWidth="340.0" promptText="Password" styleClass="field-decoration" />
+            <ComboBox layoutX="55.0" layoutY="920" prefHeight="38.0" prefWidth="340.0" promptText="Security Question" styleClass="field-decoration" />
+            <TextField layoutX="55.0" layoutY="970.0" prefHeight="38.0" prefWidth="340.0" promptText="Answer" styleClass="field-decoration" />
+            <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="55.0" layoutY="1039.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/valtina/Desktop/Banking/src/main/java/images/150.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="247.0" layoutY="1071.0" text="Profile Picture">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <Button layoutX="247.0" layoutY="1122.0" mnemonicParsing="false" styleClass="login-button" text="Browse Picture" />
+            <Button layoutX="125.0" layoutY="1220.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" styleClass="login-button" text="Create Account">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+   </content>
+</ScrollPane>
