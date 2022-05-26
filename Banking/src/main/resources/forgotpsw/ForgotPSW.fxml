@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="450.0" styleClass="login-main" stylesheets="@../design/designsheet.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="forgotpsw.ForgotPSWController">
+    <children>
+        <Button layoutX="374.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#closeApp" styleClass="login-button" text="CLOSE" textFill="#868686">
+            <font>
+                <Font size="10.0" />
+            </font></Button>
+        <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#backToLogIn" styleClass="login-button" text="BACK" textFill="#868686">
+            <font>
+                <Font size="10.0" />
+            </font></Button>
+        <Label layoutX="96.0" layoutY="68.0" text="Forgot Password">
+            <font>
+                <Font name="Impact" size="36.0" />
+            </font>
+        </Label>
+        <Label layoutX="106.0" layoutY="113.0" text="Recover your password here">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="AccountNo" layoutX="48.0" layoutY="182.0" prefHeight="38.0" prefWidth="340.0" promptText="Your Account Number" styleClass="field-decoration" stylesheets="@../design/designsheet.css" />
+        <ComboBox fx:id="SecurityQ" layoutX="48.0" layoutY="249.0" prefHeight="38.0" prefWidth="340.0" promptText="Security Question" styleClass="field-decoration" />
+        <TextField fx:id="Answer" layoutX="48.0" layoutY="315.0" prefHeight="38.0" prefWidth="340.0" promptText="Answer" styleClass="field-decoration" stylesheets="@../design/designsheet.css" />
+
+        <Button layoutX="118.0" layoutY="422.0" mnemonicParsing="false" onMouseClicked="#recoverPsw" prefHeight="35.0" prefWidth="200.0" styleClass="login-button" text="Recover Password">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

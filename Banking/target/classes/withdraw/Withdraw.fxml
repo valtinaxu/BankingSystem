@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<ScrollPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="withdraw.WithdrawController">
+   <content>
+      <AnchorPane prefHeight="506.0" prefWidth="760.0" styleClass="login-main" stylesheets="@../design/designsheet.css">
+         <children>
+            <Pane layoutX="180.0" prefHeight="506.0" prefWidth="400.0">
+               <children>
+                  <Label layoutX="69.0" layoutY="46.0" text="Withdraw Amount">
+                     <font>
+                        <Font name="Impact" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="69.0" layoutY="139.0" text="Your Account No.:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="69.0" layoutY="178.0" text="Current Balance:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="accountno" layoutX="229.0" layoutY="135.0" prefHeight="35.0" prefWidth="107.0" text="000000">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="balance" layoutX="229.0" layoutY="174.0" prefHeight="35.0" prefWidth="107.0" text="000000">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="213.0" layoutY="174.0" text="\$">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="amt_field" layoutX="65.0" layoutY="262.0" prefHeight="39.0" prefWidth="262.0" promptText="Amount">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="psw_field" layoutX="65.0" layoutY="320.0" prefHeight="39.0" prefWidth="262.0" promptText="Enter Account Password">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </PasswordField>
+                  <Button layoutX="94.0" layoutY="418.0" mnemonicParsing="false" onMouseClicked="#withdrawButton" prefHeight="40.0" prefWidth="200.0" styleClass="login-button" stylesheets="@../design/designsheet.css" text="Withdraw">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

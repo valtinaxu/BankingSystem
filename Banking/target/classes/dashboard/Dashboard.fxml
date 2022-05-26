@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane onMouseDragged="#drag" onMousePressed="#click" prefHeight="600.0" prefWidth="1000.0" styleClass="login-main" stylesheets="@../design/designsheet.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dashboard.DashboardController">
+   <children>
+      <ImageView fitHeight="25.0" fitWidth="26.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/metal-bank-icon-on-white-background-stock-vector-12.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="49.0" layoutY="14.0" text="Simple Bank Limited - Client Software" textFill="#007ff5">
+         <font>
+            <Font name="Impact" size="18.0" />
+         </font>
+      </Label>
+      <Pane layoutY="43.0" prefHeight="567.0" prefWidth="240.0" styleClass="dashboard-sidebar">
+         <children>
+            <VBox prefHeight="145.0" prefWidth="240.0" styleClass="dashboard-profilepic">
+               <children>
+                  <Circle fx:id="profilepic" fill="DODGERBLUE" radius="48.0" stroke="BLACK" strokeType="INSIDE">
+                     <VBox.margin>
+                        <Insets left="65.0" top="10.0" />
+                     </VBox.margin>
+                  </Circle>
+                  <Text fx:id="name" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Name Here" textAlignment="CENTER" wrappingWidth="237.13671875">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Text>
+               </children>
+            </VBox>
+            <Button layoutY="169.0" mnemonicParsing="false" onMouseClicked="#accountInformation" prefHeight="50.0" prefWidth="240.0" styleClass="dashboard-menu" stylesheets="@../design/designsheet.css" text="Account Information" textFill="#007ff5">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button layoutY="369.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="240.0" styleClass="dashboard-menu" stylesheets="@../design/designsheet.css" text="Transfer Money" textFill="#007ff5">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button layoutY="219.0" mnemonicParsing="false" onMouseClicked="#withdraw" prefHeight="50.0" prefWidth="240.0" styleClass="dashboard-menu" stylesheets="@../design/designsheet.css" text="Withdraw" textFill="#007ff5">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button layoutY="269.0" mnemonicParsing="false" onMouseClicked="#deposit" prefHeight="50.0" prefWidth="240.0" styleClass="dashboard-menu" stylesheets="@../design/designsheet.css" text="Deposit" textFill="#007ff5">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button layoutY="319.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="240.0" styleClass="dashboard-menu" stylesheets="@../design/designsheet.css" text="Transaction History" textFill="#007ff5">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button layoutY="419.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="240.0" styleClass="dashboard-menu" stylesheets="@../design/designsheet.css" text="Change Password" textFill="#007ff5">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+         </children></Pane>
+      <Pane layoutX="240.0" layoutY="43.0" prefHeight="60.0" prefWidth="760.0">
+         <children>
+            <Label layoutX="40.0" layoutY="15.0" text="User Dashboard" textFill="#797979">
+               <font>
+                  <Font name="Calibri" size="26.0" />
+               </font>
+            </Label>
+            <Button layoutX="575.0" layoutY="18.0" mnemonicParsing="false" onMouseClicked="#mainScreen" style="-fx-cursor: hand;" styleClass="login-forgot" text="Home">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+            <Button layoutX="639.0" layoutY="18.0" mnemonicParsing="false" onMouseClicked="#logout" style="-fx-cursor: hand;" styleClass="login-forgot" text="SignOut">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+         </children>
+      </Pane>
+      <Button layoutX="925.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#closeApp" prefHeight="22.0" prefWidth="61.0" styleClass="login-button" text="CLOSE" textFill="#007ff5" />
+      <Pane fx:id="dash_main" layoutX="240.0" layoutY="103.0" prefHeight="506.0" prefWidth="760.0" style="-fx-background-color: white;" />
+   </children>
+</AnchorPane>
